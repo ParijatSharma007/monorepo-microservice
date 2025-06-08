@@ -5,6 +5,25 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
-    "fastify": "^5.3.3"
+    "@prisma/client": "^6.9.0",
+    "dotenv": "^16.5.0",
+    "fastify": "^4.29.1"
+  },
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev"
+  },
+  "keywords": [],
+  "author": "",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.15.30",
+    "prisma": "^6.9.0",
+    "ts-node-dev": "^2.0.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
   }
 }
