@@ -16,5 +16,9 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "dayjs": "^1.11.13",
+    "typescript": "^5.8.3"
+  }
 }
