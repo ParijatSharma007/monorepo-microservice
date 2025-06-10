@@ -2,11 +2,6 @@ import { createRoot } from "react-dom/client";
 import "./style.css";
 import typescriptLogo from "/typescript.svg";
 import { Counter, Header } from "@repo/ui";
-import { TUserDetails } from "@repo/types";
-
-const x : TUserDetails = {
-  full_name : "shdfjhs"
-}
 
 const App = () => (
   <div>

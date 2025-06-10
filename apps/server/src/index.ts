@@ -4,7 +4,7 @@ import { PrismaClient } from '@prisma/client'
 const fastify = Fastify({ logger: true })
 const prisma = new PrismaClient()
 
-fastify.get('/', async (request, reply) => {
+fastify.get('/', async () => {
   const users = await prisma.user.findMany()
   return users
 })
