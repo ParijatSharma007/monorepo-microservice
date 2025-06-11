@@ -6,8 +6,8 @@
   "type": "module",
   "dependencies": {
     "@prisma/client": "^6.9.0",
-    "dotenv": "^16.5.0",
-    "fastify": "^4.29.1"
+    "fastify": "^4.29.1",
+    "@repo/dotenv": "*"
   },
   "scripts": {
     "dev": "tsx watch src/index.ts",

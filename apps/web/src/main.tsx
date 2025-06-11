@@ -3,23 +3,27 @@ import "./style.css";
 import typescriptLogo from "/typescript.svg";
 import { Counter, Header } from "@repo/ui";
 
-const App = () => (
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" className="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img
-        src={typescriptLogo}
-        className="logo vanilla"
-        alt="TypeScript logo"
-      />
-    </a>
-    <Header title="Web" />
-    <div className="card">
-      <Counter />
+
+const App = () => {
+  console.log(process.env.GREETING)
+  return (
+    <div>
+      <a href="https://vitejs.dev" target="_blank">
+        <img src="/vite.svg" className="logo" alt="Vite logo" />
+      </a>
+      <a href="https://www.typescriptlang.org/" target="_blank">
+        <img
+          src={typescriptLogo}
+          className="logo vanilla"
+          alt="TypeScript logo"
+        />
+      </a>
+      <Header title="Web" />
+      <div className="card">
+        <Counter />
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 createRoot(document.getElementById("app")!).render(<App />);

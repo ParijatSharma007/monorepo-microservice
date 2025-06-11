@@ -1,8 +1,12 @@
 import Fastify from 'fastify'
 import { PrismaClient } from '@prisma/client'
+import "@repo/dotenv"
+
 
 const fastify = Fastify({ logger: true })
 const prisma = new PrismaClient()
+
+console.log(process.env.GREETING)
 
 fastify.get('/', async () => {
   const users = await prisma.user.findMany()
