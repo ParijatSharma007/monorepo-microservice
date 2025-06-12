@@ -5,7 +5,6 @@ import { Counter, Header } from "@repo/ui";
 
 
 const App = () => {
-  console.log(process.env.GREETING)
   return (
     <div>
       <a href="https://vitejs.dev" target="_blank">

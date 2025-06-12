@@ -10,13 +10,12 @@
     "lint": "eslint \"src/**/*.ts\""
   },
   "dependencies": {
-    "@repo/dotenv": "*",
     "@repo/ui": "*",
-    "@repo/types" :"*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@repo/types" :"*",
     "@repo/eslint-config": "*",
     "@repo/typescript-config": "*",
     "@types/react": "^19.0.1",

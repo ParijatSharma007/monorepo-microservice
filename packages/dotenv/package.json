@@ -1,5 +1,5 @@
 {
-  "name": "@repo/dotenv",
+  "name": "@repo/envconfigure",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",

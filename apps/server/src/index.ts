@@ -1,6 +1,6 @@
 import Fastify from 'fastify'
 import { PrismaClient } from '@prisma/client'
-import "@repo/dotenv"
+import "@repo/envconfigure"
 
 
 const fastify = Fastify({ logger: true })
