@@ -10,10 +10,12 @@
     "lint": "eslint \"src/**/*.ts\""
   },
   "dependencies": {
+    "@repo/types": "*",
     "@repo/ui": "*",
-    "@repo/types" :"*",
+    "fabric": "^6.7.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "toast": "^0.5.4"
   },
   "devDependencies": {
     "@repo/eslint-config": "*",

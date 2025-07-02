@@ -1,3 +1,4 @@
 export type TUserDetails = {
-    full_name : string
+    full_name : string,
+    age : number
 }
