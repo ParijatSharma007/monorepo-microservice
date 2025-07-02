@@ -1,0 +1,15 @@
+{
+  "name": "@repo/envconfigure",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+
+  "scripts": {
+    "dev" : "node index.js"
+  },
+
+  "exports" : {
+    ".": "./index.js"
+  }
+}
