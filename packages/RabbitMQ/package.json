@@ -1,0 +1,27 @@
+{
+	"name": "@obi/rabbitmq",
+	"version": "1.0.0",
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"import": "./dist/index.mjs",
+			"require": "./dist/index.js"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsup"
+	},
+	"dependencies": {
+		"amqplib": "^0.10.3",
+		"uuid": "^13.0.0"
+	},
+	"devDependencies": {
+		"tsup": "^8.0.0",
+		"typescript": "^5.5.0"
+	}
+}

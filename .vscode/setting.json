@@ -1,0 +1,18 @@
+{
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"editor.formatOnPaste": false,
+	"editor.tabSize": 2,
+	"editor.insertSpaces": true,
+	"files.eol": "\n",
+	"files.trimTrailingWhitespace": true,
+	"files.insertFinalNewline": true,
+	"prettier.requireConfig": true,
+	"prettier.prettierPath": "./node_modules/prettier",
+	"search.exclude": {
+		"**/node_modules": true,
+		"**/dist": true,
+		"**/.turbo": true
+	},
+	"eslint.validate": ["javascript", "typescript", "typescriptreact", "json"]
+}

@@ -10,14 +10,17 @@
   },
   "devDependencies": {
     "eslint": "^8.57.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
     "minimist": "^1.2.8",
-    "prettier": "^3.2.5",
+    "prettier": "^3.6.2",
     "turbo": "^2.5.4"
   },
   "name": "with-vite-react",
-  "packageManager": "yarn@1.22.22",
+  "packageManager": "yarn@4.10.3",
   "workspaces": [
-    "apps/*",
+    "apps/web",
+    "apps/server/*",
     "packages/*"
   ],
   "dependencies": {
