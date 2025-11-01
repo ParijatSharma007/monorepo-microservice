@@ -1,23 +1,24 @@
 {
-	"name": "gateway",
-	"packageManager": "yarn@4.10.3",
-	"type": "module",
-	"main": "src/index.ts",
-	"scripts": {
-		"dev": "NODE_ENV=local tsx watch src/index.ts",
-		"start": "NODE_ENV=production node --enable-source-maps dist/index.js",
-		"build": "tsc"
-	},
-	"devDependencies": {
-		"@types/amqplib": "^0",
-		"@types/express": "^4.17.21",
-		"@types/node": "^22.6.1",
-		"tsx": "^4.20.6",
-		"typescript": "^5.6.3"
-	},
-	"dependencies": {
-		"@obi/rabbitmq": "*",
-		"amqplib": "^0.10.9",
-		"express": "^5.1.0"
-	}
+  "name": "gateway",
+  "packageManager": "yarn@4.10.3",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "NODE_ENV=local tsx watch src/index.ts",
+    "start": "NODE_ENV=production node --enable-source-maps dist/index.js",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.6.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@obi/grpc": "*",
+    "@obi/rabbitmq": "*",
+    "amqplib": "^0.10.9",
+    "express": "^5.1.0"
+  }
 }

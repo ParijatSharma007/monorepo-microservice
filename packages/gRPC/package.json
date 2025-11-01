@@ -1,0 +1,31 @@
+{
+  "name": "@obi/grpc",
+  "version": "1.0.0",
+  "type": "module",
+  "packageManager": "yarn@4.10.3",
+  "main": "./dist/src/index.js",
+  "module": "./dist/src/index.mjs",
+  "types": "./dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/src/index.mjs",
+      "require": "./dist/src/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@grpc/grpc-js": "^1.14.0",
+    "@grpc/proto-loader": "^0.8.0"
+  },
+  "scripts": {
+    "dev": "NODE_ENV=local tsx watch src/index.ts",
+    "build": "tsup && cp -r src/proto dist/proto"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.5.0"
+  }
+}
