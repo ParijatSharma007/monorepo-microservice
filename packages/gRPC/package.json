@@ -8,7 +8,7 @@
   "types": "./dist/src/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/src/index.mjs",
+      "import": "./dist/src/index.js",
       "require": "./dist/src/index.js"
     }
   },

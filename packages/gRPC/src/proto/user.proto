@@ -8,7 +8,7 @@ service UserService {
 }
 
 message GetUserRequest {
-  string id = 1;
+  int32 id = 1;
 }
 
 message CreateUserRequest {
@@ -17,7 +17,7 @@ message CreateUserRequest {
 }
 
 message UserResponse {
-  string id = 1;
+  int32 id = 1;
   string name = 2;
   string email = 3;
 }
